@@ -34,3 +34,5 @@ function updateTimers() {
 // Update timers every second
 setInterval(updateTimers, 1000);
 updateTimers();
+
+

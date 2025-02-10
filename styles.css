@@ -1,16 +1,27 @@
 body {
-  background-image: url('BG.png');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-attachment: scroll;
-  background-position: top center;
-  min-height: 139vh;
+  background-color: rgb(255, 147, 183);
+  width: 100%;
+  height: 240vh;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack the events vertically */
+  padding: 20px;
+}
+
+.event-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Equal spacing between elements */
+  gap: 50px; /* Space between each event */
 }
 
 .event {
-  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Distribute the content horizontally */
+  width: 100%;
 }
 
 .timer-container {
@@ -45,10 +56,44 @@ body {
 }
 
 /* Positioning */
-.rose { top: 10%; left: 14%; }
-.propose { top: 21%; left: 44%; }
-.chocolate { top: 35%; left: 10%; }
-.teddy { top: 51%; left: 54%; }
-.promise { top: 63%; left: 7%; }
-.hug { top: 83%; left: 59%; }
-.kiss { top: 97%; left: 18%; }
+.rose, .chocolate, .promise, .kiss {
+  justify-content: flex-start; /* Align these elements to the left */
+}
+
+.teddy, .hug, .propose {
+  justify-content: flex-end; /* Align these elements to the right */
+}
+
+/* Customize Modal */
+.modal-content {
+  background-color: #fff0f5;  /* Light pink background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: 2px solid #ff4d6d;
+}
+
+.modal-title {
+  color: #ff4d6d; /* Cute pinkish text */
+}
+
+.close {
+  color: #ff4d6d;  /* Pink close button */
+}
+
+.modal-body img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.modal-body p {
+  color: #ff4d6d;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
