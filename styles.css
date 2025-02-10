@@ -1,24 +1,54 @@
 body {
   background-image: url('BG.png');
   background-repeat: no-repeat;
-  background-size: 100% auto; /* Width = 100% of viewport, height = auto */
-  background-attachment: scroll; /* Ensures scrolling */
-  background-position: top center; /* Aligns image */
-  min-height: 140vh; /* Ensures content allows scrolling */
+  background-size: 100% auto;
+  background-attachment: scroll;
+  background-position: top center;
+  min-height: 139vh;
 }
 
-.rose {
+.event {
   position: absolute;
-  top: 80px;
-  left: 45px;
+  display: flex;
+  align-items: center;
 }
-.propose {
-  position: absolute;
-  top: 160px;
-  left: 260px;
+
+.timer-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
 }
-.chocolate {
-  position: absolute;
-  top: 290px;
-  left: 30px;
+
+.timer-container.right {
+  margin-left: 15px; /* Places timer on the right */
 }
+
+.timer-container.left {
+  margin-right: 15px; /* Places timer on the left */
+}
+
+.open-btn {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.open-btn:hover {
+  background-color: #ff1a4d;
+}
+
+/* Positioning */
+.rose { top: 10%; left: 14%; }
+.propose { top: 21%; left: 44%; }
+.chocolate { top: 35%; left: 10%; }
+.teddy { top: 51%; left: 54%; }
+.promise { top: 63%; left: 7%; }
+.hug { top: 83%; left: 59%; }
+.kiss { top: 97%; left: 18%; }
