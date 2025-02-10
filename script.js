@@ -7,6 +7,7 @@ const events = {
   "timer-promise": new Date(2025, 1, 11),  // Promise Day - Feb 11
   "timer-hug": new Date(2025, 1, 12),  // Hug Day - Feb 12
   "timer-kiss": new Date(2025, 1, 13),  // Kiss Day - Feb 13
+  "timer-valentine": new Date(2025, 1, 14)  // Valentine's Day - Feb 14
 };
 
 function updateTimers() {
