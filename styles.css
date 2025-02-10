@@ -9,11 +9,16 @@ body {
 
 .rose {
   position: absolute;
-  top: 9%;
-  left: 12%;
+  top: 80px;
+  left: 45px;
 }
 .propose {
   position: absolute;
-  top: 20%;
-  left: 67%;
+  top: 160px;
+  left: 260px;
+}
+.chocolate {
+  position: absolute;
+  top: 290px;
+  left: 30px;
 }
