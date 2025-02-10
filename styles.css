@@ -1,0 +1,8 @@
+body {
+  background-image: url('BG.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto; /* Width = 100% of viewport, height = auto */
+  background-attachment: scroll; /* Ensures scrolling */
+  background-position: top center; /* Aligns image */
+  min-height: 140vh; /* Ensures content allows scrolling */
+}
